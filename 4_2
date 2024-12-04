@@ -1,0 +1,7 @@
+def test_function():
+    def  inner_function():
+        print("Я в области видимости функции test_function")
+    inner_function()
+
+#не получится вызвать функцию inner_function, тк она можно так сказать доступна только внутри родителя, то-есть внутри test_function()
+test_function()
